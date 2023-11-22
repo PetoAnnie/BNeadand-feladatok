@@ -1,0 +1,207 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+  }
+  #vissza{
+    width: 50px;
+    height: 30px;
+    background-color: aqua;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+  }
+  #vissza:hover{
+    background-color: aqua;
+  }
+  
+  .kontener {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 16px; 
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  
+  .oszlop {
+    padding: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    border-collapse: collapse;
+    cursor: pointer;
+    
+  }
+  .reklamSor{
+    padding: 5px;
+    text-align: center;
+    margin: 20px 20px;
+    grid-area: reklamSor;
+    background-color: burlywood;
+    color: darkcyan;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+ 
+  header{
+    padding: 5px;
+    text-align: center;
+    margin: 50px 50px;
+    grid-area: header;
+    background-color: rgb(156, 252, 156);
+    color: darkcyan;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  footer{
+    grid-area: footer;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 120px;
+  }
+  .kep {
+
+        max-width: 1024px; 
+        
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+      }
+  .kep img {
+        width: 100%; 
+        height: auto; 
+      }
+  .kep2 {
+
+        max-width: 1024px; 
+        padding: 20px;
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+      }
+  .kep2 img {
+        width: 100%; 
+        height: auto; 
+      }
+
+   .szoveg{
+    text-align: left;
+    margin-left: 120px;
+   }
+   
+   .tablaForma {
+    width: 100%;
+    border-collapse: collapse;
+    margin:auto;
+    font-size: 16px;
+    text-align: left;
+    
+  }
+  
+  .tablaForma th,
+  .tablaForma td {
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tablaForma th {
+    background-color: #c0bcbc;
+  }
+  
+  .tablaForma tr:hover {
+    background-color: #f5f5f5;
+  }
+  .tablaForma tr{
+    background-color: bisque;
+  }
+
+
+
+  .tablaForma2 {
+    width: 100;
+    border-collapse: collapse;
+    margin:20px auto;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .tablaForma2 th,
+  .tablaForma2 td {
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tablaForma2 th {
+    background-color: #c0bcbc;
+  }
+  
+  .tablaForma2 tr:hover {
+    background-color: #f5f5f5;
+  }
+  .tablaForma2 tr{
+    background-color: bisque;
+  }
+  .fut{
+    grid-template-areas: "fut";
+    padding: 20px;
+    text-align: center;
+    margin: 50px 120px;
+    font-size: 30px;
+    font-weight: 200;
+
+  }
+  main{
+    grid-template-areas: "main";
+    padding: 20px;
+    text-align: center;
+    margin: 50px 120px;
+  }
+  .fut{
+    margin-left: 100px;
+  }
+  .profileKepek {
+    text-align: center;
+}
+
+.profilKep {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 50%;
+}
+  
+  @media (min-width: 1024px) {
+    .kontener {
+      grid-template-columns: 1fr 1fr 1fr; 
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .kontener{
+      grid-template-columns: 1fr 1fr; 
+    }
+    header{
+        font-size: 16px;
+    }
+    
+  }
+  @media (max-width: 480px) {
+    .kontener{
+      grid-template-columns: 1fr ; 
+    }
+    header{
+        display: none;
+    }
+  }
+  
